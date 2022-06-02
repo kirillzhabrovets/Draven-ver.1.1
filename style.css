@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #c7a577;
+    -webkit-font-smoothing: antialiased;
+    background-color:#c7a577;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+/*Container*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*Nav*/
+
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    margin-left: 30px;
+    color: red;
+    text-decoration: none;
+    opacity: 0.45;
+
+    transition: opacity 0.2s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0px ;
+}
+.nav__link:hover {
+    text-decoration: underline;
+    opacity: 0.99;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    height: 175px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid red;
+    padding: 35px 0S;
+    align-items: center;
+    
+}
+
+/* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    padding-top: 75px;
+
+    background: #c7a577 url("images/Illaoi-y-Draven-Cleptomanía-2019.jpg") center no-repeat;
+    background-size:cover;
+    
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title{
+    margin: 0 0 15px 0;
+    font-family: 'Open Sans',
+    sans-serif;
+    font-size: 65px;
+    line-height: 1.1;
+    color: rgb(255, 115, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.658);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.intro__subtitle {
+    font-size: 20px;
+    color: rgb(170, 9, 9);
+    line-height: 1.5;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.473);
+    margin-bottom: 50px;
+}
+
+/* Button */
+
+.button {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background 0.2s linear;
+
+}
+
+.btn--red {
+    background-color: red;
+}
+
+.btn--red:hover {
+    background-color: rgb(165, 5, 5);
+}
+
+/*Container*/
+.container {
+}
+
+/*Plitka*/
+
+.plitka {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0px 100px 0px;
+}
+
+.plitka__item {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0px 30px 50px 30px;
+}
+
+.plitka__icon {
+    margin-bottom: 5px;
+}
+
+.plitka__title {
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.plitka__text {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.5;
+    color: black;
+}
