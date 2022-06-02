@@ -150,6 +150,7 @@ p {
 
 /*Container*/
 .container {
+
 }
 
 /*Plitka*/
@@ -164,6 +165,8 @@ p {
     width: 33.33333%;
     text-align: center;
     padding: 0px 30px 50px 30px;
+    /* background: transparent; - прозрачный фон*/
+    
 }
 
 .plitka__icon {
@@ -183,4 +186,64 @@ p {
     font-size: 12px;
     line-height: 1.5;
     color: black;
+}
+
+
+/* Suits/Костюмы (образы) */
+
+.costumes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.costumes__item {
+    width: 25%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.costumes__item:hover .costumes__content {
+    opacity: 1;
+}
+
+.costumes__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.costumes__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    transition: opacity 0.14s linear;
+
+    background-color: rgba(244, 164, 96, 0.6);
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.costumes__title {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.costumes__text {
+    font-size: 20px;
+    color: #fff;
 }
