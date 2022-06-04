@@ -24,8 +24,9 @@ p {
 /*Container*/
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /*Nav*/
@@ -199,6 +200,9 @@ p {
 .costumes__item {
     width: 25%;
     height: 500px;
+
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
     position: relative;
     overflow: hidden;
 }
@@ -246,4 +250,84 @@ p {
 .costumes__text {
     font-size: 20px;
     color: #fff;
+}
+
+/* Team */
+
+
+.team {
+    margin: 100px 0 70px 0;
+    
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: warp;
+    margin: 0 -15px;
+}
+
+.team__item {
+    width: 25%;
+    padding:  0 15px;
+    margin-bottom: 30px;
+    
+}
+
+.team__photo {
+    margin-bottom: 20px;
+    display: block;
+    max-width: 100%;
+    height: 70%;
+    
+}
+
+.team__name {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+}
+
+.team__prof {
+    border-bottom: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    color: red;
+    text-transform: uppercase;
+}
+
+.team__text {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: blue;
+    margin-bottom: 15px;
+}
+
+
+
+/* Sprite */
+.social__item {
+    background-image: url(sprite.png);
+    background-position: 0px 0px;
+    width: 512px;
+    height: 512px;
+  }
+
+
+
+
+/* Social */
+
+.social {
+    display: flex;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
 }
