@@ -136,6 +136,7 @@ p {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
 
     transition: background 0.2s linear;
 
@@ -147,6 +148,10 @@ p {
 
 .btn--red:hover {
     background-color: rgb(165, 5, 5);
+}
+
+.btn--long {
+    min-width: 280px;
 }
 
 /*Container*/
@@ -315,6 +320,12 @@ p {
     margin: 5px;
 }
 
+
+.social--footer {
+    justify-content: center;
+}
+
+
 .social__item1 {
     display: flex;
     justify-content: center;
@@ -373,6 +384,38 @@ p {
     border-radius: 8px;
 }
 
+.social--footer .social__item1 {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 6px;
+}
+
+.social--footer .social__item1:hover {
+    background-color: purple;
+}
+
+.social--footer .social__item2 {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 5px;
+}
+
+.social--footer .social__item2:hover {
+    background-color: #7289da;
+}
+
+.social--footer .social__item3 {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 8px;
+}
+
+.social--footer .social__item3:hover {
+    background-color: red;
+}
 
 
 /* Reviews */
@@ -426,4 +469,87 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     color:white;
+}
+
+
+/* Download */
+
+.download {
+    margin: 90px 0 90px 0;
+    text-align: center;
+}
+
+.download__title {
+    margin-bottom: 5px;
+    
+    font-style: 28px;
+    color:black;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.download__text {
+    margin-bottom: 30px;
+
+    font-style: 13px;
+    color:rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(90, 72, 33);
+}
+
+.footer__inner {
+    padding: 70px 0 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__block {
+    width: 33.3333%;
+    text-align: center;
+
+    padding: 0 15px;
+}
+
+.footer__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.footer__adress {
+    font-style: 14px;
+    line-height: 1.5;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__text {
+    font-style: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+    background-color: rgba(58, 47, 23);
+    padding: 20px 0;
+}
+
+.copyright__text {
+    text-align: center;
+    font-style: 14px;
+    color: gray;
+    line-height: 1.5;
+}
+
+.copyright__text span {
+    color: white;
 }
