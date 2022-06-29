@@ -33,16 +33,16 @@ p {
 
 .nav {
     display: flex;
-    font-size: 13px;
+    font-size: 19px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .nav__link {
     margin-left: 30px;
-    color: red;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    opacity: 0.45;
+    opacity: 0.75;
 
     transition: opacity 0.2s linear;
 }
@@ -50,9 +50,10 @@ p {
 .nav__link:first-child {
     margin-left: 0px ;
 }
+
 .nav__link:hover {
     text-decoration: underline;
-    opacity: 0.99;
+    opacity: 1;
 }
 
 /* Header */
@@ -70,7 +71,8 @@ p {
 .header__inner{
     display: flex;
     justify-content: space-between;
-    border-bottom:1px solid red;
+    border-bottom:1px solid rgb(0, 0, 0);
+    border-style:dotted;
     padding: 35px 0S;
     align-items: center;
     
@@ -117,7 +119,7 @@ p {
     font-weight: 700;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.473);
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 /* Button */
@@ -131,7 +133,7 @@ p {
     border: 0;
     cursor: pointer;
 
-    font-size: 13px;
+    font-size: 23px;
     color: white;
     font-weight: 600;
     text-transform: uppercase;
@@ -163,8 +165,9 @@ p {
 
 .plitka {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 50px 0px 100px 0px;
+    
 }
 
 .plitka__item {
@@ -206,17 +209,22 @@ p {
     width: 25%;
     height: 500px;
 
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
+    /* border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff; */
+
     position: relative;
     overflow: hidden;
+    border: none;
 }
 
 .costumes__item:hover .costumes__content {
     opacity: 1;
+    
 }
 
 .costumes__img {
+    min-width: 10%;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -262,20 +270,18 @@ p {
 
 .team {
     margin: 100px 0 70px 0;
-    
 }
 
 .team__inner {
     display: flex;
-    flex-wrap: warp;
+    flex-wrap: wrap;
     margin: 0 -15px;
 }
 
 .team__item {
     width: 25%;
     padding:  0 15px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px; 
 }
 
 .team__photo {
@@ -283,7 +289,6 @@ p {
     display: block;
     max-width: 100%;
     height: 70%;
-    
 }
 
 .team__name {
@@ -605,6 +610,18 @@ p {
 
 /* Media Zapros */
 
+@media (max-width: 1300px) {
+
+    /* Costumes */
+
+    .costumes__item {
+        width: 50%;
+    }
+
+}
+
+
+
 @media (max-width: 990px) {
     
     /* Nav */
@@ -627,7 +644,47 @@ p {
         font-size: 40px;
     }
 
+
+    /* Plitka */
+    .plitka__item {
+        width: 50%;
+    }
+
+
+    /* Team */
+    .team__item {
+    width: 50%;
+    text-align: center;
+    }
+
+    .team__photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social {
+        justify-content:center;
+    }
+
+
+    /* Reviews */
+
+    .reviews__photo{
+        width: 100%;
+        overflow: hidden;
+        margin: 15px 0px 40px;
+    }
+    .reviews__content{
+        width: 100%;
+        padding-left: 0px;
+        padding-bottom: 40px;
+    }
+    .reviews__img{
+        min-width: 100%; 
+        right: -170px;
+    }
 }
+
 
 @media (max-width: 767px) {
 
@@ -645,4 +702,100 @@ p {
         font-size: 17px;
         margin-bottom: 16px;
     }
+
+    /* Plitka */
+    .plitka {
+        margin: 40px 0;
+    }
+    .plitka__item {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+
+
+     /* Costumes */
+        .costumes__item {
+            width: 100%;
+            height: 420px;
+            margin-bottom: 10px;
+        }
+
+
+     /* Team */
+    .team {
+        margin: 60px 0 30px 0;
+    }
+
+    .team__item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .team__photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    /* Reviews */
+
+    .reviews__text{
+        font-size: 20px;
+    }
+
+
+    /* Button */
+
+    .btn--long{
+        min-width: 260px;
+    }
+
+
+    /* Download */
+
+    .download{
+        margin: 50px 0px;
+    }
+
+    .download__title{
+        font-size: 24px;
+    }
+
+
+
+    /* Footer */
+    
+
+    .footer__inner{
+        padding: 30px 0px;
+    }
+
+    .footer__block{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .footer__block:last-child{
+        margin-bottom: 0px;
+    }
+
+
+
+
+
+
+    @media (max-width: 414px){
+
+        /* Reviews */
+        .reviews__img{
+            right: -300px;
+        }
+
+    }
+
 }
