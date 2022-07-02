@@ -65,7 +65,19 @@ p {
     top: 0;
     left: 0;
     z-index: 100;
+   
+}
+
+.header.fixed {
+    position: fixed;
+    background-color: #c7a577;
+}
+
+.header.fixed .header__inner {
+    padding-top: 15px;
+    padding-bottom: 0px;
     
+    border-bottom: 0cm;
 }
 
 .header__inner{
@@ -165,6 +177,7 @@ p {
 
 .plitka {
     display: flex;
+    flex-wrap: wrap;
     /* flex-wrap: wrap; */
     margin: 50px 0px 100px 0px;
     
@@ -430,9 +443,21 @@ p {
     overflow: hidden;
 }
 
+
+.reviews__slider{
+    height: 500px;
+    overflow: hidden;
+}
+
+
+.reviews__slider.slick-initialized {
+    height: auto;
+}
+
 .reviews__item {
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .reviews__photo {
@@ -476,6 +501,49 @@ p {
     color:white;
 }
 
+.slick-dots {
+    
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 10px;
+    list-style: none;
+    width: 50%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    background: rgb(255, 222, 161);
+    border-radius: 50%;
+    border-color: black;
+    width: 20px;
+    height:20px;
+    bottom: 0;
+    padding: 0;
+
+    opacity: 0.5;
+    cursor: pointer;
+    
+    font-style: 0;
+    color:transparent;
+}
+
+.slick-dots button:focus{
+    outline: 0;
+}
+
+
+.slick-dots .slick-active button{
+    opacity: 1;
+}
 
 /* Download */
 
@@ -627,8 +695,31 @@ p {
     /* Nav */
     .nav {
         display: none;
+        width: 100%;
+        flex-direction: column;
+
+        background-color: #c7a577;
+        text-align: right;
+
+        position: absolute;
+        right: 0;
+        top: 100%;
+
+
     }
     
+
+
+    .nav.show{
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 9px 15px;
+    }
+
+
+
     /* Burger */
     .burger {
         display: block;
@@ -691,16 +782,17 @@ p {
     .intro {
         height: auto;
         padding-top: 130px;
-        padding-bottom: 30px;
+        padding-bottom: 130px;
     }
 
     .intro__title {
-        font-size: 30px;
+        margin-top: 30px;
+        font-size: 20px;
     }
 
     .intro__subtitle {
         font-size: 17px;
-        margin-bottom: 16px;
+        margin-bottom: 30px;
     }
 
     /* Plitka */

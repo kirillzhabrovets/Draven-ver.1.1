@@ -8,12 +8,17 @@
         <link href="link rel="preconnect href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">" rel="stylesheet">
+        
+        
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Draven</title>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         
-</head>
+</head> 
 <body>
 
 <!--Header-->
@@ -24,14 +29,14 @@
                     <img src="Images/draven-logo.png" width="150" height="150" alt="">
                 </div>
 
-                <nav class="nav">
-                    <a class="nav__link" href="#">Сборки</a>
-                    <a class="nav__link" href="#">Контрпики</a>
-                    <a class="nav__link" href="#">Хайлайты</a>
-                    <a class="nav__link" href="#">Лучшие игроки</a>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" data-scroll="#Сборки" href="#">Сборки</a>
+                    <a class="nav__link" data-scroll="#Костюмы" href="#">Костюмы</a>
+                    <a class="nav__link" data-scroll="#Лучшие" href="#">Лучшие игроки</a>
+                    <a class="nav__link" data-scroll="#Отзывы" href="#">Отзывы о игре</a>
                 </nav>
 
-                <button class="burger">
+                <button class="burger" type="button" id="navToggle">
                     <span class="burger__item">Menu</span>
                 </button>
             </div>
@@ -52,7 +57,7 @@
 
 <!--Плитка-->
 
-<div class="container">
+<div class="container" id="Сборки">
     <div class="plitka">
 
     <!-- БЕТА ТЕСТ КНОПКИ
@@ -89,12 +94,11 @@
     </div> <!--.plitka-->
 </div><!--.container-->
 
-
-
 <!-- Costumes/Костюмы (образы) -->
+
 <hr color="black">
 
-<div class="costumes">
+<div class="costumes" id="Костюмы">
 
     <div class="costumes__item">
         <img class="costumes__img" src="Images/Сет2.jpg" alt="">
@@ -159,7 +163,7 @@
 
 
 <!-- Team -->
-<div class="team">
+<div class="team" id="Лучшие">
     <div class="container">
         <div class="team__inner">
             <div class="team__item">
@@ -266,21 +270,67 @@
 
 <!-- Reviews -->
 
-<div class="reviews">
+<div class="reviews" id="Отзывы">
     <div class="container">
 
-        <div class="reviews__item">
-            <div class="reviews__photo">
-                <img class="reviews__img" src="/Images/reviews ptoject/reviews1.jpg"  alt="">
-            </div>
-            <div class="reviews__content">
-                <div class="reviews__text">"Youth is something I never want to take for granted. 
-                        I just want to play League of legends on Draven."
+        <div class="reviews__slider" id="reviewsSlider">
+            <div class="slickItem">
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="/Images/reviews ptoject/reviews5.gif"  alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">"Youth is something I never want to take for granted. 
+                                I just want to play League of legends on Draven."
+                        </div>
+                        <div class="reviews__author">Tyler Steinkamp, Future Hokage</div>
+                    </div>
                 </div>
-                <div class="reviews__author">Tyler Steinkamp, Default Player</div>
             </div>
-        </div>
+            
+            <div class="slickItem" >
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="/Images/reviews ptoject/reviews2.jpg"  alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">"I am not a follower. I'm the leader.
+                             And anyone who expresses their opinion always catches my axe."
+                        </div>
+                        <div class="reviews__author">Tyler Steinkamp, Default Player</div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="slickItem" >
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="/Images/reviews ptoject/reviews3.jpg"  alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">"I'm an optimistic guy. I'm one of those big dreamers.
+                             I want Demassia citizenship."
+                        </div>
+                        <div class="reviews__author">Tyler Steinkamp, The Dwarf</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slickItem" >
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="/Images/reviews ptoject/reviews1.jpg"  alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">"I want to earn as much gold as possible to smash
+                             the faces of enemies in the late game."
+                        </div>
+                        <div class="reviews__author">Tyler Steinkamp, Saluted Demassia</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div> <!--/.container-->
 </div> <!--/.reviews-->
 
@@ -358,7 +408,8 @@
 
 
 <!-- JavaSript -->
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-
+carousel@1.8.1/slick/slick.min.js"></script>
 <script src="app.js"></script>
 
 
